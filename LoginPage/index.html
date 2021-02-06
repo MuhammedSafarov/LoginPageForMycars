@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>mycars.com</title>
+    <title>Login Mycars</title>
 
     <script type="text/javascript">
       window.addEventListener("load", function () {
@@ -22,14 +22,14 @@
 
           if (
             fullname.value.trim() == "Muxammed Safarov" &&
-            password.value.trim() == 1234
+            password.value.trim() == "muxammed123"
           ) {
-            alert("Login succeeded !");
+            window.location="message.html"
           } else if (
-            fullname.value.trim() == "Test User" &&
-            password.value.trim() == 1234
+            fullname.value.trim() == "User" &&
+            password.value.trim() == "user123"
           ) {
-            alert("Login succeeded !");
+            window.location="message.html"
           } else {
             alert ("Full Name or Password is wrong !!!");
           }
@@ -40,9 +40,9 @@
 
   <body>
     <div class="login-wrapper">
-      <form class="form">
+      <form  class="form">
         <img src="img/avatar.png" alt="" />
-        <h2>LOGIN for Rent A Car</h2>
+        <h2>LOGIN</h2>
         <div class="input-group">
           <input
             id="uname"
@@ -68,7 +68,7 @@
       </form>
 
       <div id="forgot-pw">
-        <form action="" class="form">
+        <form action="message.html" class="form">
           <!--<form action="" class="form">-->
           <a href="#" class="close">&times;</a>
           <h2>Reset Password</h2>
