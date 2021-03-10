@@ -5,6 +5,7 @@
   }
   .container{
     width: 100%;
+     /*Add*/
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7
     )),url('img/cars.jpg');
@@ -18,10 +19,6 @@
     height: 12%;
     display: flex;
     align-items: center;
-  }
-  .menu-icon{
-    width: 30px;
-    cursor: pointer;
   }
   nav{
     flex: 1;
@@ -47,12 +44,13 @@
   }
   h1{
     color: #fff;
-    font-size: 50px;
+    font-size: 6vh;
   }
   p{
     color: #fff;
-    font-size: 14px;
+    font-size: 4vh;
     line-height: 40px;
+    font-family: 'Courier New', Courier, monospace;
   }
   button{
     width: 180px;
@@ -67,8 +65,8 @@
 
   }
 .card{
-  width: 200px;
-  height: 230px;
+  width: 30vh;
+  height: 20vh;
   display: inline-block;
   border-radius: 10 px;
   padding: 15px 25px;
@@ -81,16 +79,16 @@
 }
 
 .card1{
-  background-image: url("img/suv.jfif");
+  background-image: url("img/audi2.jpg");
 }
 .card2{
-  background-image: url("img/hatchback.jpg");
+  background-image: url("img/ford2.webp");
 }
 .card3{
-  background-image: url("img/sedan.jpg");
+  background-image: url("img/mercedes2.jpg");
 }
 .card4{
-  background-image: url("img/coupe.jpg");
+  background-image: url("img/toyota2.jpg");
 }
 
 .card:hover{
@@ -225,4 +223,60 @@
     text-decoration: none;
     color: inherit;
   }
+  footer{
+    background: black;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 17px;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+  }
+  .socials a:hover i{
+    color: aqua;
+  }
   
+  @media screen and (max-width: 768px){
+    .row{
+      width: 100%;
+    }
+
+  }
